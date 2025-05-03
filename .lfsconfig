@@ -1,2 +1,2 @@
 [lfs]
-url = http://localhost:3000/lfs
+url = http://localhost:3000/proxy/github.com/skyrim-multiplayer/lfs-test2.git/info/lfs
