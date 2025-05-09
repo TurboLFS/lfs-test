@@ -1,18 +1,18 @@
 [lfs "customtransfer.mybatcher"]
-    # Path to your custom transfer agent script, relative to the repo root.
+    # Explicitly use 'node' as the program to execute.
+    # Git LFS will find 'node' (or 'node.exe') in the system PATH.
+    path = node
+
+    # The first argument to 'node' is your script's path.
     # If your script is in the root:
-    path = custom-lfs-agent.js
+    args = custom-lfs-agent.js
     # If your script was in, for example, a 'scripts' subdirectory:
-    # path = scripts/custom-lfs-agent.js
+    # args = scripts/custom-lfs-agent.js
 
-    # Since your agent handles its own batching and likely its own parallelism
-    # (or is fine being called serially by LFS for batches), set to false.
+    # These settings remain the same:
     concurrent = false
-
-    # Your current agent only supports downloads.
     direction = download
 
 [lfs]
-    # This tells Git LFS to use 'mybatcher' as the standalone agent
-    # for all LFS operations, without contacting an LFS API server for actions.
+    # This also remains the same:
     standalonetransferagent = mybatcher
