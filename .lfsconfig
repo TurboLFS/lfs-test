@@ -1,18 +1,1 @@
-[lfs "customtransfer.mybatcher"]
-    # Explicitly use 'node' as the program to execute.
-    # Git LFS will find 'node' (or 'node.exe') in the system PATH.
-    path = node
 
-    # The first argument to 'node' is your script's path.
-    # If your script is in the root:
-    args = /Users/leonidpospelov/projects/lfs-experiment/agent/index.js
-    # If your script was in, for example, a 'scripts' subdirectory:
-    # args = scripts/custom-lfs-agent.js
-
-    # These settings remain the same:
-    concurrent = false
-    direction = download
-
-[lfs]
-    # This also remains the same:
-    standalonetransferagent = mybatcher
