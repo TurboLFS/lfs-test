@@ -5,7 +5,7 @@
 
     # The first argument to 'node' is your script's path.
     # If your script is in the root:
-    args = custom-lfs-agent.js
+    args = /Users/leonidpospelov/projects/lfs-experiment/agent/index.js
     # If your script was in, for example, a 'scripts' subdirectory:
     # args = scripts/custom-lfs-agent.js
 
